@@ -1,0 +1,480 @@
+@font-face {
+    font-family: mifuenteMia;
+    src: url(../fuentes/CormorantGaramond-BoldItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cormorant Garamond;
+    text-decoration: none;
+}
+
+body {
+    background-color: #5E715E;
+}
+
+.logo1 {
+    display: flex;
+    width: 0px;
+    height: 0px;
+    margin-left: 40px;
+}
+
+.logo {
+    width: 300px;
+    height: 150px;
+    margin-top: -5px;
+}
+
+.icon {
+    padding-top: 90px;
+}
+
+/* .menu__icono {
+    margin-right: 300px;
+} */
+
+.menu {
+    display: block;
+    /* align-items: flex-end; */
+    /* margin-bottom: 100px; */
+}
+
+nav {
+    margin: auto;
+    background: #5E715E;
+    font-size: 15px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.menu__horizontal {
+    list-style: none;
+    display: flex;
+    /* justify-content: space-around; */
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.menu__horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu__horizontal > li:hover {
+    background-color: #6d8777;
+}
+
+.menu__vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: #9ba79c;
+    text-transform: none;
+    z-index: 2;
+}
+
+.menu__horizontal li:hover .menu__vertical {
+    display: block;
+}
+
+.menu__vertical li:hover {
+    background-color: #6d8777;
+}
+
+.menu__vertical li a {
+    display: block;
+    color: #dcdfdc;
+    padding: 10px 10px 10px 15px;
+    text-decoration: none;
+}
+
+.menu__superior {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menu__icono {
+    margin-right: 40px;
+    padding-right: 20px;
+    /* padding-top: 50px; */
+    /* margin-top: 50px; */
+}
+
+.menu__Empresa {
+    margin-top: -47px;
+}
+
+
+#contenedor {
+    background: #fff;
+    width: 80%;
+}
+
+footer {
+    margin: auto;
+    padding: 20px;
+}
+
+.texto__footer {
+    text-align: center;
+    color: black;
+}
+
+a {
+    color: rgb(0, 71, 36);
+}
+
+/* Carrito */
+
+.cuadro-info {
+    background-color: #fff;
+    text-align: center;
+    width: 80%;
+    border: 20px;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+.texc {
+    margin-left: 28px;
+}
+
+/* metodo de pago */
+
+.metodo-pago {
+    margin: 0 auto;
+    padding: 40px;
+    padding-left: 34px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 520px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mtd-pagott {
+    text-align: center;
+}
+
+.detalles-pago {
+    margin-bottom: 20px;
+}
+
+.dtpago {
+    font-size: 20px;
+}
+
+.h2center {
+    text-align: center;
+}
+
+.opcion-pago {
+    display: flex;
+    align-items: center;
+}
+
+.info-tarjeta {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 0.2px solid gray;
+    border-radius: 20px;
+}
+
+.nombre-tarjeta {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 32px;
+}
+
+.numero-tarjeta {
+    margin-right: 18px;
+}
+
+.expiracion {
+    margin-right: 18px;
+    color: gray;
+    font-size: 14px;
+}
+
+p {
+    margin: 20px 35px 20px 0 ;
+    font-size: 20px;
+    color: #292929;
+    line-height: 24px;
+}
+
+.logo-tarjeta img {
+    max-width: 40px;
+    margin-left: 18px;
+}
+
+.añadir-tarjeta {
+    margin-left: 38%;
+}
+
+.añadir-tarjeta:hover {
+    border-bottom: 2px solid #2F8A57;
+}
+
+.siguente-boton {
+    width: 50%;
+    margin-left: 26%;
+    padding: 10px;
+    background-color: #2f7e46;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.siguente {
+    color: #fff;
+}
+
+.circulo-checkbox {
+    display: none;
+}
+
+.circulo-checkbox + label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: white;
+  border: 2px solid #cccccc;
+  border-radius: 50%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.circulo-checkbox:checked + label:before {
+  background-color: #2f7e46;
+  border-color: #2f7e46;
+  box-shadow: inset 0 0 0 5px white;
+}
+
+.circulo-checkbox:focus + label:before {
+  outline: none;
+  border-color: #2f7e46;
+}
+
+/* Procede al pago */
+
+.container-pago {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para el cuadro de pago */
+
+.pago-caja {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pago-caja h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.pago-metodo {
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+}
+
+.totaltitu {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
+.cambiar {
+    padding-right: 3%;
+}
+
+.cambiar2 {
+    padding-left: 8%;
+}
+
+.correo {
+    display: flex;
+    align-items: center;
+}
+
+.pago-metodo img {
+    height: 20px;
+    margin: 0 5px;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #666;
+}
+
+.presio {
+    color: #2f7e46;
+    font-size: 30px;
+}
+
+.confirmar-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2f7e46;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.confirmar-btn:hover {
+    background-color: #38944c;
+}
+
+/* Finalizar compra */
+
+.container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.importe {
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.account-info, .card-info, .date-info, .time-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-number, .card-number, .date, .time {
+    margin-left: 10px;
+}
+
+.continue-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.check {
+    height: 100px;
+}
+
+/* carrito */
+
+.carrito-de-compras {
+    background-color: white;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.tr-ab {
+    background-color: #f2f2f2;
+}
+
+.ctd-img {
+    display: flex; 
+    align-items: center;
+}
+
+.totales {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.tr-ab {
+    width: 50px; 
+    height: 50px;
+}
+
+.totales p {
+    margin: 5px 0;
+}
+
+.totales button {
+    background-color: #308845;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
