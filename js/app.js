@@ -8,8 +8,8 @@ cierraMenu.addEventListener('click',close);
 
 function show(){
     menu__horizontal.style.display = 'flex';
-    menu__horizontal.style.left = '0';
+    menu__horizontal.style.top = '0';
 }
 function close(){
-    menu__horizontal.style.left = '120%';
+    menu__horizontal.style.top = '100%';
 }
