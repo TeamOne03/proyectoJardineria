@@ -171,7 +171,7 @@ main {
 .descripcion p {
     margin-right: 15px;
     text-align: justify;
-    margin-bottom: 50px;
+    padding-bottom: 7.7%;
     font-size: 18px;
     color: #292929;
     line-height: 20px
@@ -196,16 +196,11 @@ main {
 }
 
 .articulo img {
-    height: 500px;
+    height: 450px;
     width: 90%;
 }
 
-.articulo .regadera {
-    height: 400px;
-    width: 90%;
-}
-
-@media (max-width: 807px) {
+@media (max-width: 937px) {
     .cuadro {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -215,11 +210,14 @@ main {
     .articulo img {
     height: 400px;
     width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
     }
 
     main {
     margin: 5%;
     padding: 20px;
+    margin-top: 50px;
     }
 }
 
@@ -234,11 +232,14 @@ main {
     .articulo img {
     height: 350px;
     width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
     }
 
     main {
     margin: 2%;
     padding: 20px;
+    margin-top: 50px;
     }
 
 }

@@ -147,6 +147,12 @@ nav {
     overflow: hidden;
 }
 
+.extendidas {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 @font-face {
     font-family: mifuenteMia;
     src: url(../fuentes/CormorantGaramond-BoldItalic.ttf);
@@ -162,7 +168,7 @@ nav {
     .catalogo {
         margin-left: 5%;
         margin-right: 5%;
-        padding: 10px 20px 30px 40px;
+        padding: 20px 35px 30px 40px;
     }
 }
 
@@ -176,6 +182,6 @@ nav {
     .catalogo {
         margin-left: 5%;
         margin-right: 5%;
-        padding: 10px 20px 30px 40px;
+        padding: 20px 35px 30px 40px;
     }
 }
