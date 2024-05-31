@@ -44,6 +44,16 @@ body {
     background-color: #5E715E;
 }
 
+footer {
+    margin: auto;
+    padding: 20px;
+}
+
+.texto__footer {
+    text-align: center;
+    color: #fff;
+}
+
 .logo1 {
     display: flex;
     width: 0px;
@@ -57,12 +67,19 @@ body {
     margin-top: -5px;
 }
 
+.flecha i {
+    display: none;
+}
+
 .icon {
     padding-top: 90px;
 }
 
+
 .menu {
     display: block;
+    /* align-items: flex-end; */
+    /* margin-bottom: 100px; */
 }
 
 nav {
@@ -76,6 +93,7 @@ nav {
 .menu__horizontal {
     list-style: none;
     display: flex;
+    /* justify-content: space-around; */
     text-transform: uppercase;
     justify-content: center;
 }
@@ -135,732 +153,630 @@ nav {
     margin-top: -47px;
 }
 
-
 /* hasta aqui hice cambios */
 
 
-nav .abreMenu {
+.menu .abreMenu {
     font-size: 1rem; /* Esto es para darle tamaño a los tre puntitos */
     margin: 20px; /* Esto aki es para darle espacio el los lados*/
-    display: flex;
+    display: none;
     cursor: pointer; /* Para cambiar de cursor*/
-    color: #5E715E;
+    /* color: #5E715E; */
 }
 
-nav .menu__horizontal .cierraMenu, .iconos i {
-    font-size: 2rem; /* Esto es para darle tamaño al los iconos y a la (x) */
+.menu .menu__horizontal .cierraMenu, .iconos i {
+    font-size: 1.5rem; /* Esto es para darle tamaño al los iconos y a la (x) */
     display: none;
     cursor: pointer; /* Para cambiar de cursor*/
 }
 
 
-.fa-instagram:hover {
+.fa-instagram {
     color: var(--rosado); /* Lo utilizo para darle un efecto al icono de instagram*/
 }
 
 
 /* Servicios */
-
-/* Selecciona el contenedor de la barra de búsqueda. */
-.search-container {
-  display: none; /*display: flex: Establece el contenedor como un contenedor flexible para que los elementos hijos puedan alinearse horizontalmente.*/
-  justify-content: center;
-  max-width: 907px; /*max-width: 907px: Limita el ancho máximo del contenedor de búsqueda a 907 píxeles.*/
-  margin: 0 auto;/*margin: 0 auto: Centra el contenedor horizontalmente dentro de su contenedor padre.*/
-}
-
-.barra {
-    background: #fff;
-    width: 90%;
-    padding: 2px;
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    height: 30px;
-    position: relative;
-}
-
-.barra input {
-    flex: 1;
-    padding: 0 10px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    font-size: 18px;
-}
-
-.barra button img {
-    width: 25px;
-}
-
-.barra button {
-    padding: 5px ;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    cursor: pointer;
-}
-
-
+/* Estilo del título de la sección de servicios */
 .servicio .titulo {
-    text-align: center;
-    font-family: light;
-    font-size: 32px;
+    text-align: center; /* Centramos el título */
+    font-family: Cormorant Garamond; /* Utilizamos la fuente Cormorant Garamond */
+    font-size: 32px; /* Tamaño del título */
+    color: #fff; /* Color del texto del título */
 }
 
+/* Estilo del contenedor de servicios */
 .servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* flex-direction: column; */
-    /* width: 100%; */
-    /* padding: 10px 0; */
+    display: flex; /* Usamos un contenedor flexible */
+    flex-wrap: wrap; /* Permitimos que los elementos hijos se envuelvan en múltiples líneas */
+    justify-content: center; /* Centramos los elementos hijos horizontalmente */
 }
 
+/* Estilo de cada imagen de servicio */
 .servicios__img {
-    margin: 30px;
-    width: 400px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 25px;
+    margin: 30px; /* Añadimos un margen alrededor de cada imagen */
+    width: 400px; /* Ancho de cada imagen */
+    height: 200px; /* Altura de cada imagen */
+    overflow: hidden; /* Ocultamos cualquier contenido que desborde el contenedor */
+    border-radius: 10px; /* Redondeamos las esquinas de cada imagen */
 }
 
+/* Estilo de las imágenes dentro de los contenedores */
 .servicios__img img {
-    height: 200px;
-    width: 400px;
-    border-radius: 25px;
-    object-fit: cover;
-    transition: .5s;
+    height: 200px; /* Altura de la imagen */
+    width: 400px; /* Ancho de la imagen */
+    border-radius: 10px; /* Redondeamos las esquinas de la imagen */
+    object-fit: cover; /* Ajustamos la imagen para cubrir el contenedor sin distorsión */
+    transition: .5s; /* Aplicamos una transición suave para las animaciones */
 }
 
+/* Estilo de la descripción de cada servicio */
 .intro {
-    height: 75px;
-    width: 400px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: relative;
-    bottom: 75px;
-    border-radius: 25px;
-    background: #5793688a;;
-    backdrop-filter: blur(20px);
-    text-align: center;
-    color: #fff;
-    transition: .5s;
+    height: 75px; /* Altura de la descripción */
+    width: 400px; /* Ancho de la descripción */
+    padding: 6px; /* Añadimos un relleno interno */
+    box-sizing: border-box; /* Ajustamos el tamaño del contenedor incluyendo el relleno */
+    position: relative; /* Posicionamos el elemento de forma relativa */
+    bottom: 65px; /* Lo desplazamos hacia abajo */
+    border-radius: 10px; /* Redondeamos las esquinas */
+    background: #9ba79c; /* Color de fondo */
+    backdrop-filter: blur(20px); /* Aplicamos un desenfoque al fondo */
+    text-align: center; /* Centramos el texto */
+    color: #fff; /* Color del texto */
+    transition: .5s; /* Aplicamos una transición suave para las animaciones */
 }
 
+/* Estilo del título dentro de la descripción */
 .servicios__img h3 {
-    margin: 5px;
-    font-size: 20px;
+    margin: 5px; /* Añadimos un margen alrededor del título */
+    font-size: 18px; /* Tamaño del texto del título */
+    font-family: Cormorant Garamond; /* Utilizamos la fuente Cormorant Garamond */
+    color: #000; /* Color del texto del título */
 }
 
+/* Estilo de los enlaces */
 .servicios__img a {
-    text-decoration: none;
+    text-decoration: none; /* Quitamos el subrayado de los enlaces */
 }
 
+/* Estilo del botón dentro de la descripción */
 .intro input {
-    height: 35px;
-    border: none;
-    margin: 15px;
-    border-radius: 25px;
-    background-color:#fff;
-    color: var(--verdeMilitar);
-    box-shadow: 0px 3px 3px 0px #333;
-    font-size: 20px;
-    font-family: fuentes;
-    cursor: pointer;
-    padding: 5px;
-    transition: .5s;
+    height: 35px; /* Altura del botón */
+    border: none; /* Quitamos el borde del botón */
+    margin: 15px; /* Añadimos un margen alrededor del botón */
+    border-radius: 25px; /* Redondeamos las esquinas del botón */
+    background-color:#9ba79c; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    box-shadow: 0px 3px 3px 0px grey; /* Añadimos una sombra al botón */
+    font-size: 18px; /* Tamaño del texto */
+    font-family: Cormorant Garamond; /* Utilizamos la fuente Cormorant Garamond */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+    padding: 5px; /* Añadimos un relleno interno */
+    transition: .5s; /* Aplicamos una transición suave para las animaciones */
 }
 
+/* Estilo del texto dentro de la descripción */
 .servicios__img p {
-    color: #fff;
-    text-align: justify;
-    transform: translateX(20px);
-    font-size: 15px;
-    margin: 10px;
-    visibility: hidden;
-    opacity: 0;
+    color: #000; /* Color del texto */
+    text-align: justify; /* Justificamos el texto */
+    transform: translateX(20px); /* Desplazamos el texto horizontalmente */
+    font-size: 15px; /* Tamaño del texto */
+    margin: 10px; /* Añadimos un margen alrededor del texto */
+    visibility: hidden; /* Ocultamos el texto inicialmente */
+    opacity: 0; /* Hacemos el texto transparente */
+    font-family: mifuenteMia; /* Utilizamos la fuente mifuenteMia */
 }
 
+/* Estilo del botón al pasar el cursor sobre él */
 .servicios__img .intro input:hover  {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Aumentamos ligeramente el tamaño del botón */
 }
 
+/* Estilo de la descripción al pasar el cursor sobre la imagen */
 .servicios__img:hover .intro{
-    height: 205px;
-    bottom: 205px;
-    background-color: var(--quizas1);
+    height: 205px; /* Aumentamos la altura de la descripción */
+    bottom: 205px; /* Posicionamos la descripción hacia abajo */
+    background-color: #fff; /* Cambiamos el color de fondo de la descripción */
 }
 
+/* Estilo del texto dentro de la descripción al pasar el cursor sobre la imagen */
 .servicios__img:hover p {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1; /* Hacemos el texto visible */
+    visibility: visible; /* Hacemos el texto visible */
 }
 
+/* Estilo de la imagen al pasar el cursor sobre ella */
 .servicios__img:hover img {
-    transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg); /* Aumentamos ligeramente el tamaño y rotamos la imagen */
 }
+
+/* Estilo del logo de navegación */
+.nav .logo {
+    margin: 6px; /* Añadimos un margen alrededor del logo */
+    font-size: 25px; /* Tamaño del texto del logo */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el logo */
+}
+
+
 
 /* --------Cotizar------- */
 
+/* Estilo para el párrafo dentro del formulario */
 .formulario__cotizar form p {
-    color: #000;
-    text-align: justify;
-    font-size: 28px;
-    margin-left: 40px;
-    line-height: 5px;
-    padding: 3px;
+    color: #000; /* Color del texto */
+    text-align: justify; /* Alineación justificada del texto */
+    font-size: 28px; /* Tamaño de fuente */
+    line-height: 25px; /* Altura de línea */
+    font-family: Cormorant Garamond; /* Fuente */
 }
 
+/* Estilo para el contenedor del formulario */
 .formulario__cotizar {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #fff;
-   width: 400px;
-   height: 100%;
-   margin: 10px auto;
-   border-radius: 25px;
+    display: flex; /* Usamos un contenedor flexible */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
 }
 
+/* Estilo para el formulario */
+.formulario__cotizar form {
+    display: flex; /* Usamos un contenedor flexible */
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    width: 400px; /* Anchura del formulario */
+    height: 715px; /* Altura del formulario */
+    border-radius: 5px; /* Redondeamos las esquinas */
+    background-color: #fff; /* Color de fondo */
+}
 
+/* Estilo para las etiquetas */
 .formulario__cotizar label {
-    margin: 20px;
-    color: #000;
+    margin: 20px; /* Margen alrededor de las etiquetas */
+    color: #000; /* Color del texto */
+    font-family: Cormorant Garamond; /* Fuente */
 }
 
-.campos {
-   margin-left: 20px;
-}
-
+/* Estilo para los campos de entrada de fecha */
 .formulario__cotizar #fecha {
-    text-align: center;
-    width: 167px;
-    padding: 0 5px;
-    font-size: 16px;
-    cursor: pointer;
+    text-align: center; /* Alineación centrada */
+    width: 165px; /* Anchura */
+    padding: 0 5px; /* Relleno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambio del cursor */
 }
 
-.formulario__cotizar #nombre, #apell{
-    width: 195px;
+/* Estilo para los campos de entrada de nombre, apellido, correo y teléfono */
+.formulario__cotizar #nombre, 
+.formulario__cotizar #apell, 
+.formulario__cotizar #email, 
+.formulario__cotizar #tel {
+    width: 200px; /* Anchura */
 }
 
-.formulario__cotizar #email {
-    width: 205px;
-}
-
+/* Estilo para los campos de entrada en general */
 .formulario__cotizar input {
-    padding: 0 8px;
-   height: 30px;
-   width: 200px;
-   border-radius: 25px;
-   margin: 5px 0;
-   border: 1px solid #bdbfbc;
-   font-size: 14px;
+    padding: 0 5px; /* Relleno */
+    height: 30px; /* Altura */
+    width: 200px; /* Anchura */
+    border-radius: 25px; /* Redondeamos las esquinas */
+    margin: 5px; /* Margen */
+    border: 1px solid #bdbfbc; /* Borde */
+    font-size: 14px; /* Tamaño de fuente */
+    outline: none; /* Quitamos el contorno */
 }
 
+/* Estilo para el contenedor de la consulta */
 .consulta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    line-height: 5px;
+    display: flex; /* Usamos un contenedor flexible */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    line-height: 5px; /* Altura de línea */
 }
 
+/* Estilo para el área de texto de la consulta */
 .consulta textarea {
-    margin: 0px;
-    border-radius: 10px;
-    width: 300px;
-    height: 75px;
+    border-radius: 10px; /* Redondeamos las esquinas */
+    width: 280px; /* Anchura */
+    height: 75px; /* Altura */
+    outline: none; /* Quitamos el contorno */
+    padding: 0 3px; /* Relleno */
 }
 
+/* Estilo para el contenedor de confirmación */
 .confirmar {
-   display: flex;
-   justify-content: center;
-   width: 375px;
-   height: 35px;
-   border-radius: 25px;
+   display: flex; /* Usamos un contenedor flexible */
+   justify-content: center; /* Centramos horizontalmente */
+   width: 375px; /* Anchura */
+   height: 35px; /* Altura */
+   border-radius: 25px; /* Redondeamos las esquinas */
 }
 
+/* Estilo para el botón de confirmación */
 .confirmar input {
-    border: 0;
-    background-color: var(--quizas1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 120px;
-    height: 30px;
-    color: #fff;
-    text-align: center;
-    margin-top: -5px;
-    padding: 1px;
-    font-size: 18px;
-    
+    border: 0; /* Quitamos el borde */
+    background-color: var(--quizas1); /* Color de fondo */
+    display: flex; /* Usamos un contenedor flexible */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    cursor: pointer; /* Cambio del cursor */
+    width: 120px; /* Anchura */
+    height: 30px; /* Altura */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+    margin-top: -5px; /* Margen superior negativo */
+    padding: 1px; /* Relleno */
+    font-size: 18px; /* Tamaño de fuente */
+    font-family: Cormorant Garamond; /* Fuente */
 }
 
+/* Estilo para el botón de confirmación al pasar el cursor */
 .formulario__cotizar input[type="submit"]:hover {
-    background-color: var(--verdeOscuro2);
+    background-color: var(--verdeOscuro2); /* Cambio de color de fondo al pasar el cursor */
 }
 
 
-/* USUARIO */
-
+/* Usuario */
 .form__usuario {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+    display: flex; /* Usamos flexbox para alinear los elementos del formulario */
+    justify-content: center; /* Centramos el formulario horizontalmente */
+    align-items: center; /* Centramos el formulario verticalmente */
+    flex-direction: column; /* Alineamos los elementos en una columna */
 }
 
 .form__usuario form {
-    box-shadow: 0px 5px 5px 5px rgb(27, 27, 27, .5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    height: 440px;
-    border-radius: 25px;
+    display: flex; /* Usamos flexbox para alinear los elementos dentro del formulario */
+    flex-direction: column; /* Alineamos los elementos en una columna */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    border: 1px solid rgba(247, 242, 242, 0.671); /* Añadimos un borde suave alrededor del formulario */
+    width: 400px; /* Ancho del formulario */
+    height: 400px; /* Alto del formulario */
+    border-radius: 5px; /* Redondeamos las esquinas del formulario */
+    padding: 30px; /* Añadimos espacio interno alrededor del contenido del formulario */
 }
 
 .form__usuario h2 {
-     text-align: center;
-     font-size: 32px;
-     color: #000;
-     margin-bottom: 25px;
+    text-align: center; /* Centramos el texto del encabezado */
+    font-size: 32px; /* Tamaño de la fuente del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    margin: 0 0 30px 0; /* Margen inferior para separar el encabezado del resto del formulario */
+    font-family: Cormorant Garamond; /* Fuente personalizada */
 }
 
-label, p {
-    font-size: 18px;
-    color: #575757;
-    margin-bottom: 10px;
+.form__usuario form input {
+    border: 0; /* Quitamos el borde de los campos de entrada */
+    outline: none; /* Quitamos el contorno de los campos de entrada */
+    width: 280px; /* Ancho de los campos de entrada */
+    height: 30px; /* Alto de los campos de entrada */
+    border-radius: 20px; /* Redondeamos las esquinas de los campos de entrada */
+    padding: 0 10px; /* Añadimos espacio interno a los lados de los campos de entrada */
+    font-size: 16px; /* Tamaño de la fuente de los campos de entrada */
+    font-family: Cormorant Garamond; /* Fuente personalizada */
 }
 
-.form__usuario input {
-    border: 0;
-    padding: 0 10px;
-    outline: none;
-}
-
-.form__usuario #correo, #pass {
-    width: 285px;
-    height: 35px;
-    border-radius: 25PX;
-    font-size: 20px;
-    font-family: fuentes;
-}
-
-.boton {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 35px;
-    border-radius: 25px;
-}
-
-.boton input{
-    background-color: var(--quizas1);
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    width: 270px;
-    height: 40px;
-    border-radius: 25px;
-    font-size: 20px;
-    color: #fff;
-    font-family: fuentes;
-    text-align: center;
-    padding: 2px;
+.form__usuario .boton input {
+    background-color: var(--quizas1); /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    width: 260px; /* Ancho del botón */
+    height: 35px; /* Alto del botón */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el botón */
+    font-size: 18px; /* Tamaño de la fuente del botón */
+    margin: 0 0 25px 0; /* Margen inferior del botón */
 }
 
 .boton:hover input {
-    background-color: var(--quizas2);
+    background-color: var(--quizas2); /* Cambiamos el color de fondo del botón al pasar el ratón sobre él */
 }
 
 .usuario p {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #000;
+    display: flex; /* Usamos flexbox para alinear el texto */
+    justify-content: center; /* Centramos el texto horizontalmente */
+    margin-bottom: 30px; /* Margen inferior del texto */
+    margin-top: 10px; /* Margen superior del texto */
+    font-size: 16px; /* Tamaño de la fuente del texto */
+    color: #fff; /* Color del texto */
+    font-family: mifuentemia; /* Fuente personalizada */
 }
 
 .otra__manera {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    align-items: center; /* Centramos los elementos verticalmente */
+    flex-direction: column; /* Alineamos los elementos en una columna */
 }
 
 .otra__manera a {
-    text-decoration: none;
+    text-decoration: none; /* Quitamos la decoración del texto de los enlaces */
 }
 
 .otra__manera h4 {
-    font-size: 20px;
-    color: #000;
-}
-
-.otra__manera p {
-    font-size: 16px;
-    color: #000;
-    margin-top: -2px;
-}
-
-.otra__manera p strong {
-    color: #1C4807;
-    cursor: pointer;
+    font-size: 18px; /* Tamaño de la fuente del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    font-family: Cormorant Garamond; /* Fuente personalizada */
 }
 
 .vinculo {
-    padding: 0px;
-    margin-top: -15px;
+    padding: 5px; /* Añadimos espacio interno alrededor del contenido */
 }
 
-.otra__manera img {
-    height: 30px auto;
-    margin: 0 10px;
-    cursor: pointer;
+.vinculo i {
+    margin: 8px; /* Margen alrededor de los iconos */
 }
+
+.otra__manera {
+    height: 30px auto; /* Altura del contenedor */
+    margin: 0 10px; /* Margen lateral */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el contenedor */
+}
+
+.registrame {
+    padding: 20px; /* Añadimos espacio interno alrededor del contenido */
+}
+
+.registrame a {
+    text-decoration: none; /* Quitamos la decoración del texto de los enlaces */
+}
+
+.registrame p {
+    font-size: 16px; /* Tamaño de la fuente del texto */
+    color: #fff; /* Color del texto */
+    font-family: Cormorant Garamond; /* Fuente personalizada */
+}
+
+.registrame p strong {
+    color: #1C4807; /* Color del texto en negrita */
+    cursor: pointer; /* Cambiamos el cursor al pasar sobre el texto en negrita */
+    font-family: mifuentemia; /* Fuente personalizada */
+}
+
+
+
 
 /* Registro de usuario */
 
+/* Estilo del contenedor principal del formulario de registro */
 .form__registro {
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex; /* Configura el contenedor como un flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
+/* Estilo del formulario de registro */
 .form__registro form {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 5px 5px 5px rgb(27, 27, 27, .5);
-    width: 300px;
-    height: 500px;
-    border-radius: 20px;
+    display: flex; /* Configura el formulario como un flexbox */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    border: 1px solid rgba(247, 242, 242, 0.671); /* Establece un borde sólido */
+    width: 400px; /* Ancho del formulario */
+    height: 470px; /* Altura del formulario */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 20px; /* Espaciado interno */
 }
 
-.form__registro .nome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Estilo de las entradas del formulario */
+.form__registro form input {
+    border: 0; /* Sin borde */
+    outline: none; /* Sin contorno al enfocar */
+    width: 285px; /* Ancho de las entradas */
+    height: 35px; /* Altura de las entradas */
+    margin: 5px; /* Margen entre las entradas */
+    border-radius: 20px; /* Borde redondeado */
+    padding: 0 10px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: Cormorant Garamond; /* Fuente */
 }
 
-.form__registro .nome input {
-    border: 0;
-}
-
-.nome #nom, #ape {
-    width: 125px;
-    height: 40px;
-    border-radius: 25px;
-    margin: 0 5px;
-    padding: 0 10px;
-    font-size: 20px;
-    font-family: fuentes;
-}
-
-.form__registro input {
-    border: 0;
-    margin: 5px;
-    outline: none;
-}
-
-.form__registro #correo ,#passw {
-    border-radius: 25px;
-    padding: 0 10px;
-    width: 285px;
-    height: 40px;
-    font-size: 20px;
-    font-family: fuentes;
-}
-
-/* .registrar {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-}
-
-.registrar input {
-    width: 50px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.registrar strong {
-    color: #1C4807;
-    cursor: pointer;
-} */
-
+/* Estilo del botón de registro */
 .regis {
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 30px;
-    border-radius: 25px;
+    display: flex; /* Configura el botón como un flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    width: 300px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    border-radius: 25px; /* Borde redondeado */
 }
 
 .regis input[type="submit"] {
-    background-color: var(--quizas1);
-    display: flex;
-    border-radius: 25px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 270px;
-    height: 40px;
-    color: #fff;
-    margin: 20px;
-    text-align: center;
-    font-size: 20px;
-    font-family: fuentes;
-    padding: 2px;
-    outline: none;
+    background-color: var(--quizas1); /* Color de fondo */
+    display: flex; /* Configura el botón como un flexbox */
+    border-radius: 25px; /* Borde redondeado */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    width: 260px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    color: #fff; /* Color del texto */
+    margin: 20px; /* Margen exterior */
+    text-align: center; /* Alineación del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: Cormorant Garamond; /* Fuente */
+    padding: 2px; /* Espaciado interno */
+    outline: none; /* Sin contorno al enfocar */
 }
 
+/* Efecto hover para el botón de registro */
 .regis:hover input {
-    background-color: var(--verdeOscuro2);
+    background-color: var(--verdeOscuro2); /* Cambia el color de fondo al pasar el cursor */
 }
 
+/* Estilo del texto "O" */
 .entrar_con p {
-    color: #000;
-    margin: 50px;
+    text-align: center; /* Alineación del texto */
+    color: #bdbfbc; /* Color del texto */
+    margin: 50px; /* Margen exterior */
 }
 
-.pag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30px;
-    border: 2px solid #9ba79c;
-    border-radius: 25px;
-    width: 150px;
-    height: 35px;
-    padding: 1px 3px;
+/* Estilo del contenedor de los botones de inicio de sesión */
+.pagina {
+    display: flex; /* Configura el contenedor como un flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-direction: column; /* Apila los elementos verticalmente */
 }
 
-.pag1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #9ba79c;
-    border-radius: 25px;
-    width: 150px;
-    height: 35px;
-    padding: 1px 3px;
-    margin: 10px;
+/* Estilo de los botones de inicio de sesión */
+.pag, .pag1 {
+    display: flex; /* Configura los botones como flexbox */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    border: 2px solid #c7d1c8; /* Borde sólido */
+    border-radius: 25px; /* Borde redondeado */
+    width: 150px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    padding: 1px 3px; /* Espaciado interno */
+    margin: 10px; /* Margen exterior */
+    text-align: center; /* Alineación del texto */
 }
 
+/* Estilo de los enlaces dentro de los botones de inicio de sesión */
 .pag a, .pag1 a {
-    text-decoration: none;
-    outline: none;
+    text-decoration: none; /* Sin subrayado */
+    outline: none; /* Sin contorno al enfocar */
 }
 
+/* Estilo del texto dentro de los botones de inicio de sesión */
 .pag strong, .pag1 strong {
-    margin: 0 10px;
-    color: #000;
+    margin: 0 10px; /* Margen entre el icono y el texto */
+    color: #fff; /* Color del texto */
+    font-family: Cormorant Garamond; /* Fuente */
+    font-size: 14px;
 }
 
-.fa-google {
-    color: #000;
+/* Estilo de los iconos de Google y Apple */
+.fa-google, .fa-apple {
+    color: #000; /* Color del icono */
 }
-
-.fa-apple {
-    color: #000;
-}
-
 
 /* ------Contatos------- */
 
+/* Estilos para el formulario de contacto */
 .form__contacto {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex; /* Hace que el contenedor del formulario se comporte como un contenedor flexible, lo que permite organizar los elementos hijos de manera flexible */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro del contenedor */
 }
 
+/* Estilos para el formulario dentro de .form__contacto */
 .form__contacto form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    width: 380px;
-    border-radius: 25px 25px 0 0;
+    display: flex; /* Hace que el formulario se comporte como un contenedor flexible, lo que permite organizar los elementos hijos de manera flexible */
+    justify-content: center; /* Centra horizontalmente los elementos hijos dentro del formulario */
+    align-items: center; /* Centra verticalmente los elementos hijos dentro del formulario */
+    flex-direction: column; /* Organiza los elementos hijos en una columna, lo que significa que se apilarán verticalmente */
+    background-color: #fff; /* Establece el color de fondo del formulario como blanco */
+    width: 420px; /* Establece el ancho del formulario */
+    height: 400px; /* Establece la altura del formulario */
+    border-radius: 5px 5px 0 0; /* Establece radios de borde específicos para dar esquinas redondeadas en la parte superior */
 }
 
-
+/* Estilos para el texto "Contacta con nosotros" dentro del formulario */
 .form__contacto form p {
-   color: #000;
-   text-align: justify;
-   font-size: 28px;
+    color: #000; /* Establece el color del texto del párrafo como negro */
+    text-align: justify; /* Justifica el texto del párrafo */
+    font-size: 28px; /* Establece el tamaño del texto del párrafo */
+    font-family: mifuentemia; /* Establece la fuente del texto del párrafo */
+    margin: 0 0 20px 0; /* Establece el margen del párrafo (arriba, derecha, abajo, izquierda) */
 }
 
+/* Estilos para los campos de entrada dentro del formulario */
 .form__contacto input {
-    border: 1px solid #9ba79c;
-    width: 240px;
-    height: 30px;
-    margin: 0 10px;
-    padding: 0 5px;
-    border-radius: 25px;
-    outline: none;
-    font-size: 15px;
+    border: 1px solid #9ba79c; /* Establece un borde sólido de color gris claro para los campos de entrada */
+    width: 240px; /* Establece el ancho de los campos de entrada */
+    height: 30px; /* Establece la altura de los campos de entrada */
+    margin: 0 10px; /* Establece el margen de los campos de entrada (arriba y abajo) y (izquierda y derecha) */
+    padding: 0 5px; /* Establece el relleno de los campos de entrada */
+    border-radius: 25px; /* Establece radios de borde redondeados para los campos de entrada */
+    outline: none; /* Elimina el contorno alrededor de los campos de entrada cuando están enfocados */
+    font-size: 15px; /* Establece el tamaño del texto dentro de los campos de entrada */
 }
 
-
-.flecha{
-    font-size: 1rem; /* Esto es para darle tamaño a los tre puntitos */
-    margin: 20px; /* Esto aki es para darle espacio el los lados*/
-    display: flex;
-    /* cursor: pointer; Para cambiar de cursor */
-    color: #E1EFD8;
-}
-
-
-
+/* Estilos para el campo de correo electrónico */
 .form__contacto #email {
-    width: 250px;
-    font-size: 15px;
+    width: 250px; /* Establece el ancho del campo de correo electrónico */
+    font-size: 15px; /* Establece el tamaño del texto dentro del campo de correo electrónico */
 }
 
+/* Estilos para el campo de teléfono */
 .form__contacto #telefono {
-    width: 170px;
+    width: 170px; /* Establece el ancho del campo de teléfono */
 }
 
+/* Estilos para las etiquetas de los campos */
 .form__contacto label {
-    color: #000;
-    font-size: 20px;
+    color: #000; /* Establece el color del texto de las etiquetas de los campos como negro */
+    font-size: 20px; /* Establece el tamaño del texto de las etiquetas de los campos */
+    font-family: mifuentemia; /* Establece la fuente del texto de las etiquetas de los campos */
 }
 
-.mensaje {
-    display: flex;
-    flex-direction: column;
-}
-
-.mensaje textarea{
-    display: flex;
-    justify-content: center;
-    border: 1px solid #9ba79c;
-    width: 330px;
-    height: 90px;
-    font-size: 18px;
-    border-radius: 20px;
-    outline: none;
-}
-
-.enviar {
-     display: flex;
-     justify-content: center;
-     width: 375px;
-     height: 35px;
-     border-radius: 25px;
-}
-
-.enviar input {
-    border: 0;
-     background-color: var(--quizas1);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     cursor: pointer;
-     width: 100px;
-     height: 30px;
-     color: #fff;
-     text-align: center;
-     padding: 0px;
-     font-size: 25px;
-     font-family: fuentes;
-     outline: none;
-}
-
-.enviar:hover input {
-     background-color: var(--verdeOscuro2);
-}
-
-.info {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-}
-
-.info .informacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    width: 380px;
-    height: 200px;
-    border-radius: 0 0 25px 25px;
-}
-
-.contacta {
-    display: flex;
-    align-self: flex-start;
-    margin-top: 15px;
-}
-
-.fa-map {
-    color: var(--quizas2);
-}
-
-.fa-envelope {
-    color: var(--quizas2);
-}
-
-.fa-phone-volume {
-    color: var(--quizas2);
-}
-
-.contacta p {
-    font-size: 16px;
-    color: #000;
-    margin: 0 10px;
-    margin-top: -3px;
-}
 
 /* Telefono */
 
-@media(max-width: 800px) and (min-width: 300px)  { 
+@media (max-width: 800px) and (min-width: 300px)  { 
 
     .logo__Empresa {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flecha {
+        display: flex;
+        float: left;
+        width: 0;
+        height: 0;
+        transform: translateX(-25px) translateY(-5px);
+        margin: 15px 0 0 0;
+        padding: 0;
+        /* margin: 0 5px; */
+    }
+
+    .flecha a {
+        text-decoration: none;
+    }
+
+    .flecha i {
+        display: flex;
+    }
+
+    
+
+    .fa-arrow-left {
+        font-size: 1.5rem;
+    }
+
 
     .logo__Empresa img {
-        width: 320px;
-        height: 114px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 180px;
+        padding: 20px 0 0 0;
     }
 
 
-    nav .menu__horizontal {
-        height: 100vh; /* Esto lo hice para darle una altura al contenedor responsivo*/
-        position: fixed; /* Esto lo utlize para fijar el contenedor*/
-        top: 0; /* Esto tres lo utilizo para que el contenedor no se mueva de donde esta.*/ 
+    .menu .menu__horizontal {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        top: 0;
         right: 0;
         left: 0;
-        z-index: 10; /* Aqui es para que el contenedor resalte*/
-        flex-direction: column;/*Para poner los elementos en columna*/
-        justify-content: center;/* Para centrar los elementos que esta dentro del contenedor*/
-        align-items: center;
-        background: #e1efd8; /*Par darle color al fondo*/
-        transition: right 1s ease; /* Una transition de un 1s para que el menu abra.*/
-        display: none;
+        position: fixed;
+        z-index: 10;
+        background-color: #5E715E;
+        transition: top 1s ease;
+        line-height: 60px;
     }
 
-    nav .menu__horizontal .cierraMenu {
+    .menu .menu__horizontal .cierraMenu {
         display: block;
         position: absolute;
         top: 20px;
         right: 20px;
     }
 
-    nav .abreMenu {
-        display: block ;
+    .menu .abreMenu {
+        display: flex;
         float: right;
         justify-content: end;
         width: 20px;
@@ -869,13 +785,14 @@ label, p {
     .fa-ellipsis-v {
         color: #bdbfbc;
         margin: 10px;
+        font-size: 1rem;
     }
 
     .fa-times {
         color: #bdbfbc;
     }
 
-    nav .menu__horizontal li a:hover {
+    .menu .menu__horizontal li a:hover {
         background: none;
         /* color: rgb(255, 123, 0); */
         font-size: 1.3rem;
@@ -884,61 +801,47 @@ label, p {
     .iconos i {
         display: inline-block;
         padding: 12px;
+        font-size: 2rem;
+    }
+
+    .menu__superior {
+        display: none;
     }
 
 
-    /* servicios */
+    
+    
 
-.search-container {
-  display: none; /*display: flex: Establece el contenedor como un contenedor flexible para que los elementos hijos puedan alinearse horizontalmente.*/
-  justify-content: center;
-  max-width: 907px; /*max-width: 907px: Limita el ancho máximo del contenedor de búsqueda a 907 píxeles.*/
-  margin: 0 auto;/*margin: 0 auto: Centra el contenedor horizontalmente dentro de su contenedor padre.*/
-}
-
-.barra {
-    background: #fff;
-    width: 100%;
-    padding: 2px;
-    margin: 0 20px;
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    height: 30px;
-    position: relative;
-}
-
-.barra input {
-    flex: 1;
-    padding: 15px 10px;
-    border: 0;
-    background: transparent;
-    font-size: 18px;
-}
-
-.barra button img {
-    width: 25px;
-}
-
-.barra button {
-    padding: 10px 12px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    cursor: pointer;
-}
-
+   /* servicios */
 
 .servicio .titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     text-align: justify;
-    font-family: light;
+    font-family: Cormorant Garamond;
     font-size: 32px;
     margin-left: 45px;
+    margin-top: 80px;
 }
 
 .servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+}
+
+.servicios__img {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 25px;
 }
 
 .servicios__img img {
@@ -946,25 +849,16 @@ label, p {
   
 }
 
-.intro {
-    height: 75px;
-    width: 100%;
-    padding: 6px;
-    box-sizing: border-box;
-    position: relative;
-    bottom: 75px;
-    border-radius: 25px;
-    background: #5793688a;
-    backdrop-filter: blur(20px);
-    text-align: center;
-    color: #fff;
-    transition: .5s;
-}
 
 .servicios__img h3 {
    display: flex;
    justify-content: center;
+   align-items: center;
    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+    font-family: Cormorant Garamond;
+    color: #000;
 }
 
 .servicios__img a {
@@ -972,27 +866,17 @@ label, p {
 }
 
 .intro input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35px;
-    border: none;
-    margin: 15px;
-    border-radius: 25px;
-    background-color:#fff;
-    color: var(--verdeMilitar);
-    box-shadow: 0px 3px 3px 0px #333;
-    font-size: 20px;
-    font-family: fuentes;
-    cursor: pointer;
-    padding: 5px;
-    transition: .5s;
+    margin: 0 0 5px 0;
 }
 
 .servicios__img p {
-    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000;
     text-align: justify;
     transform: translateX(0px);
+    /* width: 200px; */
     font-size: 18px;
     margin: 10px;
     visibility: hidden;
@@ -1003,8 +887,10 @@ label, p {
 
 .servicios__img .intro{   
     height: 205px;
+    width: 300px;
+    line-height: 20px;
     bottom: 205px;
-    background-color: var(--quizas1);
+    background-color: #fff;
 }
 
 .servicios__img p {
@@ -1013,7 +899,60 @@ label, p {
 }
 
 
+/* Cotizar */
+.formulario__cotizar p {
+    text-align: justify;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 20px;
+}
 
+.formulario__cotizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.formulario__cotizar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    height: 700px;
+    border-radius: 25px;
+}
+/* Usuario */
+.form__usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.form__usuario form {
+    width: 320px;
+}
+
+/* Resgistro */
+
+.form__registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.form__registro form {
+    width: 320px;
+ }
 
 /* Contacto */
 
@@ -1024,18 +963,38 @@ label, p {
      margin-bottom: 25px;
 }
 
-.fa-arrow-left {
-    color: #bdbfbc;
-    margin: 10px;
-    font-size: 1.5rem;
+.form__contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 0 0;
+ }
+ 
+ .form__contacto form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-color: #fff;
+     width: 350px;
+     height: 400px;
+     border-radius: 25px 25px 0 0;
+     margin: 0px 0 0 0;
+ }
+
+ .info .informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    height: 160px;
+    border-radius: 0 0 25px 25px;
 }
 
-.flecha {
-    display: block;
-    float: right;
-    width: 40px;
-    margin-top: -70px;
-}
 
 
 }
