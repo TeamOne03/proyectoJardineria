@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Carrito</title>
     <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
     <link rel="stylesheet" href="css/estilosM.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
 </head>
 <body>
     <header>
     <div class="logo1">
         <figure class="logo__Empresa">
-            <a href="index.html"><img src="imagenes/jhedi.png" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
+            <a href="index.html"><img src="imagenes/CapturaLogo3.JPG" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
         </figure>
     </div>
     <nav class="menu">
             <!-- Menu-->
         <ul class="menu__superior">
             <li class="menu__icono">
-                <a href="buscador"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
+                <a href="#"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
                 <a href="carrito.html"><img src="imagenes/cart-alt-regular-36.png" alt="carrito" class="icon"></a>
                 <a href="perfil.html"><img src="imagenes/user-circle-regular-36.png" alt="usuario" class="icon"></a>
             </li>
@@ -29,7 +30,7 @@
             <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
             <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
             </li>
-            <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
+            <li class="menu__Empresa"><a href="catálogo.html">Productos</a>
                 <ul class="menu__vertical">
                     <li><a href="plantas.html">Plantas</a></li>
                     <li><a href="fertilizantes.html">Fertilizantes</a></li>
@@ -44,53 +45,38 @@
     </header>
     <main>
         <div class="carrito-de-compras">
-        <h2>Carrito de Compras</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                    <th>Subtotal</th>
-                </tr>
-            </thead>
-                <tr>
-                    <td>
-                        <a href="planta3.html">
-                            <div class="ctd-img">
-                                <img class="img-carrito" src="imagenes/PLANTA-FICUS-ELASTICA-ROBUSTA-1-.jpg" alt="" style="width: 80px; height: 80px; margin-right: 10px;">
-                            Ficus elastica
-                            </div>
-                        </a>
-                    </td>
-                    <td>$250.00</td>
-                    <td>1</td>
-                    <td>$250.00</td>
-                </tr>
-                <tr class="tr-ab">
-                    <td>
-                        <a href="planta6.html">
-                            <div class="ctd-img">
-                                <img class="img-carrito" src="imagenes/KALANCHOE-2.png" alt="" style="width: 80px; height: 80px; margin-right: 10px;">
-                            Kalanchoe
-                            </div>
-                         </a>
-                    </td>
-                    <td>$250.00</td>
-                    <td>1</td>
-                    <td>$250.00</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="totales">
-            <p>Articulos seleccionados: <span>2</span></p>
-            <p>Total: <span>$500.00</span></p>
-            <a href="procede-pago.html"><button class="siguente">Proceder al Pago</button></a>
+            <h2>Carrito de compras</h2>
+            <table id="tablaCarrito">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Itebis</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="carritoContainer">
+                    <!-- Los productos del carrito se cargarán aquí dinámicamente -->
+                </tbody>
+            </table>
+            <div id="mensajeCarritoVacio" style="text-align: center;">
+                <p>¡Tu carrito está vacío!</p>
+            </div>
+            <div class="totales">
+                <p>Artículos seleccionados: <span id="articulosSeleccionados">0</span></p>
+                <p>Envio: <span>200</span></p>
+                <p>Itbis: <span id="totalItebis">0%</span></p>
+                <p>Total: <span id="totalCarrito">$0.00</span></p>
+                <a id="procederPagoLink" href="procede-pago.html"><button class="siguiente">Proceder al Pago</button></a>
+            </div>
+            
         </div>
-    </div>
     </main>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
+    <script src="js/carrito.js"></script>
 </body>
 </html>

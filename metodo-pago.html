@@ -11,16 +11,16 @@
 </head>
 <body>
     <header>
-        <div class="logo1">
+    <div class="logo1">
         <figure class="logo__Empresa">
-            <a href="index.html"><img src="imagenes/jhedi.png" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
+            <a href="index.html"><img src="imagenes/CapturaLogo3.JPG" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
         </figure>
     </div>
     <nav class="menu">
             <!-- Menu-->
         <ul class="menu__superior">
             <li class="menu__icono">
-                <a href="buscador"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
+                <a href="#"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
                 <a href="carrito.html"><img src="imagenes/cart-alt-regular-36.png" alt="carrito" class="icon"></a>
                 <a href="perfil.html"><img src="imagenes/user-circle-regular-36.png" alt="usuario" class="icon"></a>
             </li>
@@ -29,7 +29,7 @@
             <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
             <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
             </li>
-            <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
+            <li class="menu__Empresa"><a href="catálogo.html">Productos</a>
                 <ul class="menu__vertical">
                     <li><a href="plantas.html">Plantas</a></li>
                     <li><a href="fertilizantes.html">Fertilizantes</a></li>
@@ -50,21 +50,21 @@
                 <p class="totaltitu">Total</p>
                 <a class="cambiar" href="carrito.html">Cambiar</a>
             </div>
-            <p class="presio">RD$500.00</p>
+            <p class="presio" id="presioTotal">RD$500.00</p>
             <hr>
             <div class="correo">
                 <p>Correo:</p>
-                <p>JuanaAlmanzar@gmail.com</p>
+                <p class="direccion-p">JuanaAlmanzar@gmail.com</p>
             </div>
             <div class="pago-metodo">
-                <p>Pago con:</p>
+                <p>Método de pago:</p>
                 <img src="imagenes/MasterCard_Logo.svg.png" alt="Tarjeta de crédito">
-                <p>**** 0000</p>
+                <p class="direccion-p">**** 0000</p>
                 <a class="cambiar2" href="procede-pago.html">Cambiar</a>
             </div>
-            <div class="correo">
-                <p>CVV:</p>
-                <p>***</p>
+            <div class="direccion">
+                <p>Dirección de envío:</p>
+                <p class="direccion-p">Capotillo calle 13 casa No:5</p>
             </div>
             <hr>
             <br>
@@ -78,5 +78,14 @@
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Obtener totalFinal desde sessionStorage
+        const totalFinal = sessionStorage.getItem('totalFinal');
+        if (totalFinal) {
+            document.getElementById('presioTotal').textContent = `RD$${totalFinal}`;
+        }
+    });
+    </script>
 </body>
 </html>

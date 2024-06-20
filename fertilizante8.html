@@ -13,14 +13,14 @@
     <header>
     <div class="logo1">
         <figure class="logo__Empresa">
-            <a href="index.html"><img src="imagenes/jhedi.png" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
+            <a href="index.html"><img src="imagenes/CapturaLogo3.JPG" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
         </figure>
     </div>
     <nav class="menu">
             <!-- Menu-->
         <ul class="menu__superior">
             <li class="menu__icono">
-                <a href="buscador"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
+                <a href="#"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
                 <a href="carrito.html"><img src="imagenes/cart-alt-regular-36.png" alt="carrito" class="icon"></a>
                 <a href="perfil.html"><img src="imagenes/user-circle-regular-36.png" alt="usuario" class="icon"></a>
             </li>
@@ -29,7 +29,7 @@
             <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
             <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
             </li>
-            <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
+            <li class="menu__Empresa"><a href="catálogo.html">Productos</a>
                 <ul class="menu__vertical">
                     <li><a href="plantas.html">Plantas</a></li>
                     <li><a href="fertilizantes.html">Fertilizantes</a></li>
@@ -64,11 +64,15 @@
                     Abono foliar libre de Cloro Micronutrientes Quelatados.</p>
                 </div>
                 <!-- Botón de compra -->
-                <div class="comprar">
-                    <a href="carrito.html"><button class="boton__comprar">Agregar al carrito</button></a>
+                <span class="Cantidad-texto">Cantidad:</span>
+                <div class="quantity-control">
+                    <button class="quantity-btn" id="decrease">-</button>
+                    <input type="number" id="quantity" value="1" max="99" min="1">
+                    <button class="quantity-btn" id="increase">+</button>
                 </div>
-                <div class="cotizar">
-                    <a href="cotizar.html"><button class="boton__cotizar">Solicitar para servicio</button></a>
+                <br>
+                <div class="comprar">
+                    <button id="addToCartBtn" class="boton__comprar">Agregar al carrito</button>
                 </div>
             </div>
         </div>
@@ -76,5 +80,7 @@
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
+    <script src="js/boton+-.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>
