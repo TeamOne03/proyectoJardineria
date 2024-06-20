@@ -14,6 +14,10 @@ body {
     background-color: #5E715E;
 }
 
+header {
+    margin-top: -25px;
+}
+
 .logo1 {
     display: flex;
     width: 0px;
@@ -33,8 +37,6 @@ body {
 
 .menu {
     display: block;
-    /* align-items: flex-end; */
-    /* margin-bottom: 100px; */
 }
 
 nav {
@@ -48,7 +50,6 @@ nav {
 .menu__horizontal {
     list-style: none;
     display: flex;
-    /* justify-content: space-around; */
     text-transform: uppercase;
     justify-content: center;
 }
@@ -100,18 +101,10 @@ nav {
 .menu__icono {
     margin-right: 40px;
     padding-right: 20px;
-    /* padding-top: 50px; */
-    /* margin-top: 50px; */
 }
 
 .menu__Empresa {
     margin-top: -47px;
-}
-
-
-.contenedor {
-    background: #fff;
-    width: 80%;
 }
 
 footer {
@@ -121,7 +114,12 @@ footer {
 
 .texto__footer {
     text-align: center;
-    color: black;
+    color: #fff;
+}
+
+.contenedor {
+    background: #fff;
+    width: 80%;
 }
 
 main {
@@ -131,26 +129,6 @@ main {
     border-radius: 10px;
 }
 
-.comprar, .cotizar {
-    display: inline;
-}
-
-.boton__cotizar {
-    background-color: #579368;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    padding: 15px 20px;
-    border-radius: 20px;
-    font-size: large;
-}
-
-.boton__cotizar:hover {
-    background-color: #3e8853;
-}
 
 .cuadro {
     display: grid;
@@ -162,42 +140,99 @@ main {
 }
 
 .descripcion h2 {
-    margin-top: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #2f7e46;
 }
 
 .descripcion p {
     margin-right: 15px;
     text-align: justify;
-    padding-bottom: 7.7%;
+    padding-bottom: 30px;
     font-size: 18px;
     color: #292929;
     line-height: 20px
 }
 
 .boton__comprar {
-    background-color: #273526;
+    background-color: #2f7e46;
     color: #fff;
     border: none;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
+    margin-top: 40px;
     cursor: pointer;
     border: none;
-    padding: 15px 20px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
     font-size: large;
 }
 
 .boton__comprar:hover {
-    background-color: #182017;
+    background-color: #579368;
 }
 
 .articulo img {
     height: 450px;
     width: 90%;
+}
+
+/* boton de articulos + - */
+
+.quantity-control {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.quantity-btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #2f7e46;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 27px;
+  height: 28px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+#quantity {
+  width: 60px;
+  text-align: center;
+  margin-top: 10px;
+  width: 40px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.Cantidad-texto {
+    text-align: justify;
+    font-size: 18px;
+    color: #292929;
+    line-height: 20px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+/* Ocultar los botones de subir y bajar */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    /*  Esto quita la apariencia predeterminada de los botones de incremento y decremento en los navegadores. */
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 @media (max-width: 937px) {
