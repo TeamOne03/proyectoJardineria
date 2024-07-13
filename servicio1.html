@@ -12,29 +12,19 @@
     
 </head>
 <body>
-
-    <div class="logo1">
-
-    <div class="flecha">
-        <a href="javascript:history.back()"> 
-        <i class="fa fa-arrow-left"></i>
-        </a>
-    </div>
-
+<header>
+    <div class="logo1">   
         <figure class="logo__Empresa">
-            <a href="index.html"><img src="imagenes/jhedi.png" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
+            <a href="index.html"><img src="imagenes/CapturaLogo3.JPG" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
         </figure>
     </div>
-    
-   
     <nav class="menu">
-    
             <!-- Menu-->  
             <div class="abreMenu"><i class="fa fa-ellipsis-v"></i></div>
            
         <ul class="menu__superior">
             <li class="menu__icono">
-                <a href="buscador"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
+                <a href="#"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
                 <a href="carrito.html"><img src="imagenes/cart-alt-regular-36.png" alt="carrito" class="icon"></a>
                 <a href="perfil.html"><img src="imagenes/user-circle-regular-36.png" alt="usuario" class="icon"></a>
             </li>
@@ -44,7 +34,7 @@
             <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
             <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
             </li>
-            <li class="menu__Empresa"><a href="catálogo.html">Catálogo</a>
+            <li class="menu__Empresa"><a href="catálogo.html">Productos</a>
                 <ul class="menu__vertical">
                     <li><a href="plantas.html">Plantas</a></li>
                     <li><a href="fertilizantes.html">Fertilizantes</a></li>
@@ -62,12 +52,18 @@
                 <i class="fab fa-github"></i> -->
             </span>
         </ul>
+        <div class="flecha">
+            <a href="javascript:history.back()">
+            <figure>
+                <img src="imagenes/left-arrow-alt-regular-24.png" alt="atras" class="atras" >
+            </figure> 
+            </a>
+        </div>
     </nav>
     <script src="js/app.js"></script>
-    </header>
+</header>
     <main>
-        
-    <section>
+          <section>
             <article class="servicio">
                 <h2 class="titulo">Servicios </h2>                   
                 <!-- Esto es para poder buscar en el area de Servicio. -->
@@ -85,7 +81,10 @@
                                    <br>
                                    4. Recojida de basura.
                                 </p>
-                                <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$2,000.00</p></span>
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Mantenimiento&precio=2000"><input type="submit" value="Solicitar"></a>
+                                </div>  
                             </div>
                                                       
                         </figure> 
@@ -103,7 +102,10 @@
                                     <br>
                                     4. Servicio de traslado y poda de alboles.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$2,500.00</p></span> 
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Diseño de jardines&precio=2500"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                             
                         </figure>
@@ -121,7 +123,10 @@
                                     <br>
                                     <!-- 4. Estimular la floración. -->
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$1,500.00</p></span> 
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Poda de planta&precio=1500"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                            
                         </figure>
@@ -139,7 +144,10 @@
                                     <br>
                                     4. Aplicación del abono.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$1,000.00</p></span> 
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Abonado&precio=1000"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                            
                         </figure>
@@ -157,7 +165,10 @@
                                     <br>
                                     4. Fumigación.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$2,500.00</p></span>
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Sistema de detección de plagas&precio=2500"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                            
                         </figure>
@@ -175,7 +186,10 @@
                                     <br>
                                     4. Bactericidas.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$3,000.00</p></span> 
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Tratamiento fitosanitario&precio=3000"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                            
                         </figure>
@@ -193,7 +207,10 @@
                                     <br>
                                     4. Control cultural.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$1,000.00</p></span> 
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Eliminación de mala hierbas&precio=1000"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                            
                         </figure>
@@ -210,14 +227,17 @@
                                     <br>
                                     4. Revisin de riego.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$3,500.00</p></span> 
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Revisión de sistema de riego&precio=3500"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                         </figure>
 
                         <figure class="servicios__img">
                             <img src="imagenes/cespedlist.jpg" alt="">
                             <div class="intro">
-                                <h3>Supervisión, reparación e instalación de césped artificial</h3>
+                                <h3>Césped artificial</h3>
                                 <p>
                                     1. Instalación de cesped y cesped artificial.
                                     <br>
@@ -225,7 +245,10 @@
                                     <br>
                                     3. Supervición de cesped.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$400.00</p></span> 
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Céped artificial&precio=400"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                             
                         </figure>
@@ -243,30 +266,19 @@
                                     <br>
                                     4. Aireación del suelo.
                                 </p>
-                                 <a href="cotizar.html"><input type="submit" value="Solicitar servicio"></a>
+                                <span><p>Precio:RD$3,500.00</p></span>
+                                <div class="botoncito">
+                                    <a href="cotizar.html?servicio=Control y programación de riego&precio=3500"><input type="submit" value="Solicitar"></a>
+                                </div>
                             </div>
                            
                         </figure>
                     </div>
             </article>
     </section>
- </main>
- <!-- <aside class="redes">
-            <h3 class="sub__redes">Siguenos en:</h3>
-            <figure class="img__redes"> -->
-                 <!-- Enlace en el logo de la aplicacion, ademas ese instagram es real de la compañia -->
-                <!-- <a href="https://www.instagram.com/jardineriahernandez21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                    <img src="imagenes/instgram.png" alt="instagram" width="50">
-                </a> -->
-                <!-- <a href="https://www.youtube.com" target="_blank">
-                    <img src="imagenes/youtube.png" alt="YouTube" width="35">
-                </a>
-                 -->
-            <!-- Este apartado lo deje para ver si creo un mini canal en youtube con los videos que tengo.
-            </figure>
-        </aside> -->
-        <footer class="footer">
-            <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
-        </footer>
+    </main>
+    <footer class="footer">
+        <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
+    </footer>
 </body>
 </html>
