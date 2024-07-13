@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Procede-pago</title>
     <meta name="description" content="Jardinería Hernández, transformando tu patio, contamos con una gran variedad de servicios...">
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
     <link rel="stylesheet" href="css/estilosM.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
 </head>
 <body>
     <header>
@@ -40,76 +41,30 @@
             <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
             <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
         </ul>
+        <div class="flecha">
+            <a href="javascript:history.back()">
+            <figure>
+                <img src="imagenes/left-arrow-alt-regular-24.png" alt="atras" class="atras" >
+            </figure> 
+            </a>
+        </div>
     </nav>
     </header>
     <main> 
         <div class="metodo-pago">
             <h2 class="mtd-pagott">Métodos de pago</h2>
             <div class="detalles-pago">
-                
                 <h3 class="dtpago">Detalles del pago</h3>
-
-                <div class="opcion-pago">
-                    <input type="checkbox" class="circulo-checkbox" id="my-checkbox">
-                    <label for="my-checkbox"></label>
-                    <div class="info-tarjeta">
-                        <p class="logo-tarjeta">
-                            <img src="imagenes/MasterCard_Logo.svg.png" alt="MasterCard">
-                        </p>
-                        <p class="numero-tarjeta">**** 0000</p>
-                        <p class="expiracion">EXP 03/24</p>
-                    </div>
-                </div>
-                <br>
-                <div class="opcion-pago">
-                    <input type="checkbox" class="circulo-checkbox" id="my-checkbox2">
-                    <label for="my-checkbox2"></label>
-                    <div class="info-tarjeta">
-                        <p class="logo-tarjeta">
-                            <img src="imagenes/visarp.svg" alt="Visa">
-                        </p>
-                        <p class="numero-tarjeta">**** 1246</p>
-                        <p class="expiracion">EXP 03/24</p> 
-                    </div>
-                </div>
-                <br>
-                <a href="agregar-metodoPago.html" class="añadir-tarjeta">+ Agregar tarjeta</a>
+                <!-- Tarjetas se agregarán dinámicamente aquí -->
             </div>
+            <a href="agregar-metodoPago.html" class="añadir-tarjeta">+ Agregar tarjeta</a>
+            <br><br>
             <button class="siguente-boton" id="siguiente-btn">Siguiente</button>
         </div>
     </main>
     <footer class="footer">
         <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
     </footer>
-
-    <script>
-        document.getElementById('siguiente-btn').addEventListener('click', function(event) {
-            var checkbox1 = document.getElementById('my-checkbox');
-            var checkbox2 = document.getElementById('my-checkbox2');
-
-            if (!checkbox1.checked && !checkbox2.checked) {
-                alert('Por favor, selecciona al menos una opción de método de pago.');
-                event.preventDefault(); // Evita que el botón haga lo que normalmente haría
-            } else {
-                window.location.href = 'metodo-pago.html';
-            }
-        });
-
-        var checkbox1 = document.getElementById('my-checkbox');
-        var checkbox2 = document.getElementById('my-checkbox2');
-
-        checkbox1.addEventListener('change', function() {
-            if (checkbox1.checked) {
-                checkbox2.checked = false;
-            }
-        });
-
-        checkbox2.addEventListener('change', function() {
-            if (checkbox2.checked) {
-                checkbox1.checked = false;
-            }
-        });
-    </script>
+    <script src="js/procede-pago.js"></script>
 </body>
 </html>
-

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Plantas</title>
     <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
-    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/estilosM.css">
 </head>
 <body>
     <header>
@@ -40,61 +40,68 @@
             <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
             <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
         </ul>
+        <div class="flecha">
+            <a href="javascript:history.back()">
+            <figure>
+                <img src="imagenes/left-arrow-alt-regular-24.png" alt="atras" class="atras" >
+            </figure> 
+            </a>
+        </div>
     </nav>
     </header>
     <main>
-        <section class="catalogo">
+        <section class="M-catalogo">
             <h3 class="text-i">Plantas</h2>
                 <div class="desplegable">
                     <li><a href="#" class="desplegable-desplasado">Categorias</a></li>
                     <ul class="desplegable-menu" style="display: none;">
-                        <li><a href="plantas.html">Relevancia</a></li>
-                        <li><a href="plantasAromaticas.html">Plantas aromaticas</a></li>
-                        <li><a href="plantasflorales.html">Plantas florales</a></li>
-                        <li><a href="plantasnoflorales.html">Plantas no florales</a></li>
+                        <li><a href="#" data-category="all">Relevancia</a></li>
+                        <li><a href="#" data-category="aromaticas">Plantas aromaticas</a></li>
+                        <li><a href="#" data-category="florales">Plantas florales</a></li>
+                        <li><a href="#" data-category="noflorales">Plantas no florales</a></li>
                     </ul>
                 </div>
                 <br><br>
-            <div class="productos">
-                <div class="producto">
+            <div class="M-productos">
+                <div class="M-producto" data-category="florales">
                   <a href="planta1.html"><img src="imagenes/PLANTA-PETUNIA-LARGA-VIDA-2-.jpg" alt="Product 1"></a>
                   <h2>Peruina larga vida</h2>
-                  <p class="precio-color">$350.00</p>
+                  <p class="M-precio-color">$350.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="aromaticas">
                   <a href="planta2.html"><img src="imagenes/PLANTA-LAVANDA-2-.jpg" alt="Product 2"></a>
                   <h2>Lavanda</h2>
-                  <p class="precio-color">$475.00</p>
+                  <p class="M-precio-color">$475.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="noflorales">
                   <a href="planta3.html"><img src="imagenes/PLANTA-FICUS-ELASTICA-ROBUSTA-1-.jpg" alt="Product 3"></a>
                   <h2>Ficus elastica</h2>
-                  <p class="precio-color">$250.00</p>
+                  <p class="M-precio-color">$250.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="florales">
                     <a href="planta4.html"><img src="imagenes/PLANTA-ANTURIO-BLANCA.jpg" alt="Product 4"></a>
                     <h2>Antuinio blanca</h2>
-                    <p class="precio-color">$550.00</p>
+                    <p class="M-precio-color">$550.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="florales">
                     <a href="planta5.html"><img src="imagenes/Orquidea-morada.png" alt="Product 5"></a>
                     <h2>Orquidea morada</h2>
-                    <p class="precio-color">$1250.00</p>
+                    <p class="M-precio-color">$1250.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="florales">
                     <a href="planta6.html"><img src="imagenes/KALANCHOE-2.png" alt="Product 6"></a>
                     <h2>Kalanchoe</h2>
-                    <p class="precio-color">$250.00</p>
+                    <p class="M-precio-color">$250.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="noflorales">
                     <a href="producto3.html"><img src="imagenes/planta.jpg" alt="Product 7"></a>
                     <h2>Planta</h2>
-                    <p class="precio-color">$375.00</p>
+                    <p class="M-precio-color">$375.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="florales">
                     <a href="planta7.html"><img src="imagenes/rosa-kordana.jpg" alt="Product 7"></a>
                     <h2>Rosas kordanas</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$1500.00</p>
                 </div>
             </div>
         </section>

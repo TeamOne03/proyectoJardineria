@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
+    <title>Plantas</title>
     <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
     <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
     <link rel="icon" href="imagenes/iconoverde.png">
-    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/estilosM.css">
 </head>
 <body>
     <header>
@@ -40,9 +40,16 @@
             <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
             <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
         </ul>
+        <div class="flecha">
+            <a href="javascript:history.back()">
+            <figure>
+                <img src="imagenes/left-arrow-alt-regular-24.png" alt="atras" class="atras" >
+            </figure> 
+            </a>
+        </div>
     </nav>
     </header>
-    <main>
+    <main class="M-main">
         <div class="cuadro">
             <div>
                 <figure class="articulo">
@@ -54,7 +61,7 @@
                     <h2>Planta Lavanda</h2>
                 </div>
                 <div class="precio">
-                    <p>Precio: RD$500</p>
+                    <p>Precio: RD$475</p>
                 </div>
                 <div class="disponibilidad">
                     <p>Disponible</p>
@@ -64,14 +71,14 @@
                 </div>
                 <!-- Botón de compra -->
                 <span class="Cantidad-texto">Cantidad:</span>
-                <div class="quantity-control">
-                    <button class="quantity-btn" id="decrease">-</button>
-                    <input type="number" id="quantity" value="1" max="99" min="1">
-                    <button class="quantity-btn" id="increase">+</button>
+                <div class="cantidad-control">
+                    <button class="cantidad-btn" id="decremento">-</button>
+                    <input type="number" id="cantidad" value="1" max="99" min="1">
+                    <button class="cantidad-btn" id="incremento">+</button>
                 </div>
                 <br>
                 <div class="comprar">
-                    <button id="addToCartBtn" class="boton__comprar">Agregar al carrito</button>
+                    <button id="añadiralcarritoBtn" class="boton__comprar">Agregar al carrito</button>
                 </div>
             </div>
         </div>

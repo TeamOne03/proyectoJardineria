@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catalogo</title>
+  <title>Fertilizantes</title>
   <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
   <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
   <link rel="icon" href="imagenes/iconoverde.png">
-    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/estilosM.css">
 </head>
 <body>
     <header>
@@ -40,62 +40,69 @@
             <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
             <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
         </ul>
+        <div class="flecha">
+            <a href="javascript:history.back()">
+            <figure>
+                <img src="imagenes/left-arrow-alt-regular-24.png" alt="atras" class="atras" >
+            </figure> 
+            </a>
+        </div>
     </nav>
     </header>
     <main>
-        <section class="catalogo">
+        <section class="M-catalogo">
             <h3 class="text-i">Fertilizantes</h2>
                 <div class="desplegable">
                     <li><a href="#" class="desplegable-desplasado">Categorias</a></li>
                     <ul class="desplegable-menu" style="display: none;">
-                        <li><a href="fertilizantes.html">Relevancia</a></li>
-                        <li><a href="fertilizanteparaflores.html">Fertilizante para flores</a></li>
-                        <li><a href="vitaminaparaelsuelo.html">Vitaminas para el suelo</a></li>
-                        <li><a href="fertilizandederaiz.html">Fertilizante de raices</a></li>
-                        <li><a href="vitaminasdecrecimiento.html">Vitaminas de crecimiento</a></li>
+                        <li><a href="#" data-category="all">Relevancia</a></li>
+                        <li><a href="#" data-category="fertilizanteparaflores">Fertilizante para flores</a></li>
+                        <li><a href="#" data-category="vitaminaparaelsuelo">Vitaminas para el suelo</a></li>
+                        <li><a href="#" data-category="fertilizandederaiz">Fertilizante de raices</a></li>
+                        <li><a href="#" data-category="vitaminasdecrecimiento">Vitaminas de crecimiento</a></li>
                     </ul>
                 </div>
                 <br><br>
-            <div class="productos">
-                <div class="producto">
+            <div class="M-productos">
+                <div class="M-producto" data-category="fertilizanteparaflores">
                   <a href="fertilizante1.html"><img src="imagenes/fertilizantecrecemas.jpg" alt="Product 1"></a>
                   <h2>Alimento para cactus</h2>
-                  <p class="precio-color">$500.00</p>
+                  <p class="M-precio-color">$313.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="vitaminaparaelsuelo">
                   <a href="fertilizante2.html"><img src="imagenes/fertilizantefoliar.jpg" alt="Product 2"></a>
                   <h2>Fertilizante foliar</h2>
-                  <p class="precio-color">$500.00</p>
+                  <p class="M-precio-color">$529.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="vitaminasdecrecimiento">
                   <a href="fertilizante3.html"><img src="imagenes/crecemas.jpg" alt="Product 3"></a>
                   <h2>Crece mas</h2>
-                  <p class="precio-color">$500.00</p>
+                  <p class="M-precio-color">$330.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="fertilizanteparaflores">
                     <a href="fertilizante4.html"><img src="imagenes/crecemasactivador.jpg" alt="Product 4"></a>
                     <h2>Activador de flores</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$310.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="fertilizanteparaflores">
                     <a href="fertilizante5.html"><img src="imagenes/crecemasorquideas.jpg" alt="Product 5"></a>
                     <h2>Alimento orquideas</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$355.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="fertilizandederaiz">
                     <a href="fertilizante6.html"><img src="imagenes/crecemasraices.jpg" alt="Product 6"></a>
                     <h2>Crece raices</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$293.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="vitaminaparaelsuelo">
                     <a href="fertilizante7.html"><img src="imagenes/nurish.jpg" alt="Product 7"></a>
                     <h2>Nurish</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$107.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="vitaminaparaelsuelo">
                     <a href="fertilizante8.html"><img src="imagenes/nurish2.jpg" alt="Product 8"></a>
                     <h2>Nurish 3lb</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$296.00</p>
                 </div>
             </div>
         </section>

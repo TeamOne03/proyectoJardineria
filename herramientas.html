@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catalogo</title>
+  <title>Herramientas</title>
   <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
   <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
   <link rel="icon" href="imagenes/iconoverde.png">
-   <link rel="stylesheet" href="css/catalogo.css">
+   <link rel="stylesheet" href="css/estilosM.css">
 </head>
 <body>
     <header>
@@ -40,64 +40,71 @@
             <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
             <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
         </ul>
+        <div class="flecha">
+            <a href="javascript:history.back()">
+            <figure>
+                <img src="imagenes/left-arrow-alt-regular-24.png" alt="atras" class="atras" >
+            </figure> 
+            </a>
+        </div>
     </nav>
     </header>
     <main>
-        <section class="catalogo">
+        <section class="M-catalogo">
             <h3 class="text-i">Herramientas</h2>
                 <div class="desplegable">
                     <li><a href="#" class="desplegable-desplasado">Categorias</a></li>
                     <ul class="desplegable-menu" style="display: none;">
-                        <li><a href="herramientas.html">Relevancia</a></li>
-                        <li><a href="palas.html">Palas</a></li>
-                        <li><a href="mangueras.html">Mangueras</a></li>
-                        <li><a href="rrastrillo.html">Rastrillos</a></li>
-                        <li><a href="tijeras.html">Tijeras</a></li>
-                        <li><a href="pistolademange.html">Pistolas de mangueras</a></li>
-                        <li><a href="arrancadordeyuyo.html">Arrancadores de yuyos</a></li>
+                        <li><a href="#" data-category="all">Relevancia</a></li>
+                        <li><a href="#" data-category="palas">Palas</a></li>
+                        <li><a href="#" data-category="mangueras">Mangueras</a></li>
+                        <li><a href="#" data-category="rastrillo">Rastrillos</a></li>
+                        <li><a href="#" data-category="tijeras">Tijeras</a></li>
+                        <li><a href="#" data-category="pistolademanguera">Pistolas de mangueras</a></li>
+                        <li><a href="#" data-category="arrancadordeyuyos">Arrancadores de yuyos</a></li>
                     </ul>
                 </div>
                 <br><br>
-            <div class="productos">
-                <div class="producto">
+            <div class="M-productos">
+                <div class="M-producto" data-category="palas">
                   <a href="herramienta1.html"><img src="imagenes/palademadera.jpg" alt="Product 1"></a>
                   <h2>Pala de madera</h2>
-                  <p class="precio-color">$500.00</p>
+                  <p class="M-precio-color">$118.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="palas">
                   <a href="herramienta2.html"><img src="imagenes/palaancha.jpg" alt="Product 2"></a>
                   <h2>Pala ancha</h2>
-                  <p class="precio-color">$500.00</p>
+                  <p class="M-precio-color">$112.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="rastrillo">
                   <a href="herramienta3.html"><img src="imagenes/rrastrillo.webp" alt="Product 3"></a>
                   <h2>Rastrillo</h2>
-                  <p class="precio-color">$500.00</p>
+                  <p class="M-precio-color">$147.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="arrancadordeyuyos">
                     <a href="herramienta4.html"><img src="imagenes/arrancadordeyuyos.webp" alt="Product 4"></a>
                     <h2>Arrancador de yuyos</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$92.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="mangueras">
                     <a href="producto1.html"><img src="imagenes/manguera.jpg" alt="Product 5"></a>
                     <h2>Manguera</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$1,975.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="pistolademanguera">
                     <a href="herramienta5.html"><img src="imagenes/pistolademanguera.jpg" alt="Product 6"></a>
                     <h2>Pistola de manguera</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$377.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="tijeras">
                     <a href="producto5.html"><img src="imagenes/tijerasStanley.jpg" alt="Product 7"></a>
                     <h2>Tijeras de jardin</h2>
-                    <p class="precio-color">$500.00</p>
+                    <p class="M-precio-color">$1275.00</p>
                 </div>
-                <div class="producto">
+                <div class="M-producto" data-category="palas">
                   <a href="accesorio3.html"><img src="imagenes/JUEGO-JARDIN-3-PIEZAS-M.MADERA-PALAS-RASTRILLO.jpg" alt="Product 3"></a>
                   <h2>Juego de jardin</h2>
-                  <p class="precio-color">$500.00</p>
+                  <p class="M-precio-color">$1416.00</p>
                 </div>
             </div>
         </section>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <meta name="description" content="Jardinería Hernández, tranformando tu patio, contamos con una gran variedad de servicios...">
+    <meta name="keywords" content="Jardinería, Servicios de Jardinería, Plantas, Jardin">
+    <link rel="icon" href="imagenes/iconoverde.png">
+    <link rel="stylesheet" href="css/estilosM.css">
+</head>
+<body>
+    <header>
+    <div class="logo1">
+        <figure class="logo__Empresa">
+            <a href="index.html"><img src="imagenes/CapturaLogo3.JPG" alt="Logo de la Jardinería Hernández" title="Logo de la Jardinería Hernández" class="logo"></a>
+        </figure>
+    </div>
+    <nav class="menu">
+            <!-- Menu-->
+        <ul class="menu__superior">
+            <li class="menu__icono">
+                <a href="#"><img src="imagenes/search-alt-regular-36.png" alt="lupa" class="icon"></a>
+                <a href="carrito.html"><img src="imagenes/cart-alt-regular-36.png" alt="carrito" class="icon"></a>
+                <a href="perfil.html"><img src="imagenes/user-circle-regular-36.png" alt="usuario" class="icon"></a>
+            </li>
+        </ul>
+        <ul class="menu__horizontal">
+            <li class="menu__Empresa"><a href="index.html">Inicio</a></li>
+            <li class="menu__Empresa"><a href="servicio1.html">Servicios</a>
+            </li>
+            <li class="menu__Empresa"><a href="catálogo.html">Productos</a>
+                <ul class="menu__vertical">
+                    <li><a href="adminAGGProductos.html">Plantas</a></li>
+                    <li><a href="adminFertilizantes.html">Fertilizantes</a></li>
+                    <li><a href="adminHerramientas.html">Herramientas</a></li>
+                    <li><a href="adminAccesorios.html">Accesorios</a></li>
+                </ul>
+            </li>
+            <li class="menu__Empresa"><a href="contactos.html">Contacto</a></li>
+            <li class="menu__Empresa"><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+        <div class="flecha">
+            <a href="javascript:history.back()">
+            <figure>
+                <img src="imagenes/left-arrow-alt-regular-24.png" alt="atras" class="atras" >
+            </figure> 
+            </a>
+        </div>
+    </nav>
+    </header>
+        <main>
+            <section class="M-catalogo">
+                <section class="M-agregar-producto"> <!-- Seccion de agregar productos -->
+                    <h3>Agregar nuevo producto</h3>
+                    <form id="formulario-producto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+        
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" step="0.01" required>
+        
+                        <label for="imagen">Imagen:</label>
+                        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+        
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="masvendidos">Mas vendidos</option>
+                        </select>
+        
+                        <button type="submit">Agregar Producto</button>
+                    </form>
+                </section>
+                <h3 class="text-i">Mas vendidos</h2>
+                <div class="M-productos">
+                    <div class="M-producto">
+                        <a href="producto1.html"><img class="extendidas" src="imagenes/mangueraVerde.jpg" alt="Product 1"></a>
+                        <h2>Manguera</h2>
+                        <p class="M-precio-color">$500.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="producto2.html"><img class="extendidas" src="imagenes/abono.png" alt="Product 2"></a>
+                        <h2>Abono</h2>
+                        <p class="M-precio-color">$500.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                        <div class="M-producto">
+                        <a href="producto3.html"><img src="imagenes/planta.jpg" alt="Product 3"></a>
+                        <h2>Planta</h2>
+                        <p class="M-precio-color">$500.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="producto4.html"><img class="extendidas" src="imagenes/pulverizador12.jpg" alt="Product 4"></a>
+                        <h2>Pulverizador</h2>
+                        <p class="M-precio-color">$500.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="producto5.html"><img src="imagenes/tijerasStanley.jpg" alt="Product 5"></a>
+                        <h2>Tijeras de jardin</h2>
+                        <p class="M-precio-color">$250.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="producto6.html"><img class="extendidas" src="imagenes/podadora-de-cesped.webp" alt="Product 6"></a>
+                        <h2>Podadora de cesped</h2>
+                        <p class="M-precio-color">$350.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="producto7.html"><img src="imagenes/maceta.jpg" alt="Product 7"></a>
+                        <h2>Maceta</h2>
+                        <p class="M-precio-color">$299.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="planta3.html"><img src="imagenes/PLANTA-FICUS-ELASTICA-ROBUSTA-1-.jpg" alt="Product 3"></a>
+                        <h2>Ficus elastica</h2>
+                        <p class="M-precio-color">$150.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="accesorio1.html"><img src="imagenes/aspersor.jpg" alt="Product 1"></a>
+                        <h2>Aspersor</h2>
+                        <p class="M-precio-color">$200.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="fertilizante5.html"><img src="imagenes/crecemasorquideas.jpg" alt="Product 5"></a>
+                        <h2>Alimento orquideas</h2>
+                        <p class="M-precio-color">$300.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="accesorio5.html"><img src="imagenes/Matera-Redonda-Cemento.jpg" alt="Product 5"></a>
+                        <h2>Maceta de cemento</h2>
+                        <p class="M-precio-color">$400.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                    <div class="M-producto">
+                        <a href="herramienta1.html"><img src="imagenes/palademadera.jpg" alt="Product 1"></a>
+                        <h2>Pala de madera</h2>
+                        <p class="M-precio-color">$250.00</p>
+                        <button class="M-eliminar-producto">Eliminar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <footer class="footer">
+        <p class="texto__footer">&copy; Todos los derechos reservados - Jardinería Hernández 2024.</p>
+    </footer>
+    <script src="js/AggProductos.js"></script>
+</body>
+</html>
